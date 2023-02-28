@@ -6,9 +6,11 @@
                     <el-carousel :interval="4000" type="card" height="200px">
                         <ElCarouselItem v-for="image in imgList" :key="image.id">
                             <div style="height: 200px;background-color: inherit;">
-                                <div
-                                    style="display: inline-block;height: 197px; width: 360px;box-shadow: 5px 5px 10px 10px #666">
+                                <div class="card">
                                     <img :src=image.img style=" height: 100%;width: 100%;">
+                                </div>
+                                <div class="card_word">
+                                    内填文字
                                 </div>
                             </div>
                         </ElCarouselItem>
@@ -20,9 +22,11 @@
                     <el-carousel :interval="4000" type="card" height="200px">
                         <ElCarouselItem v-for="image in imgList" :key="image.id">
                             <div style="height: 200px;background-color: inherit;">
-                                <div
-                                    style="display: inline-block;height: 197px; width: 360px;box-shadow: 5px 5px 10px 10px #666">
+                                <div class="card">
                                     <img :src=image.img style=" height: 100%;width: 100%;">
+                                </div>
+                                <div class="card_word">
+                                    内填文字
                                 </div>
                             </div>
                         </ElCarouselItem>
@@ -34,9 +38,11 @@
                     <el-carousel :interval="4000" type="card" height="200px">
                         <ElCarouselItem v-for="image in imgList" :key="image.id">
                             <div style="height: 200px;background-color: inherit;">
-                                <div
-                                    style="display: inline-block;height: 197px; width: 360px;box-shadow: 5px 5px 10px 10px #666">
+                                <div class="card">
                                     <img :src=image.img style=" height: 100%;width: 100%;">
+                                </div>
+                                <div class="card_word">
+                                    内填文字
                                 </div>
                             </div>
                         </ElCarouselItem>
@@ -48,9 +54,11 @@
                     <el-carousel :interval="4000" type="card" height="200px">
                         <ElCarouselItem v-for="image in imgList" :key="image.id">
                             <div style="height: 200px;background-color: inherit;">
-                                <div
-                                    style="display: inline-block;height: 197px; width: 360px;box-shadow: 5px 5px 10px 10px #666">
+                                <div class="card">
                                     <img :src=image.img style=" height: 100%;width: 100%;">
+                                </div>
+                                <div class="card_word">
+                                    内填文字
                                 </div>
                             </div>
                         </ElCarouselItem>
@@ -62,9 +70,11 @@
                     <el-carousel :interval="4000" type="card" height="200px">
                         <ElCarouselItem v-for="image in imgList" :key="image.id">
                             <div style="height: 200px;background-color: inherit;">
-                                <div
-                                    style="display: inline-block;height: 197px; width: 360px;box-shadow: 5px 5px 10px 10px #666">
+                                <div class="card">
                                     <img :src=image.img style=" height: 100%;width: 100%;">
+                                </div>
+                                <div class="card_word">
+                                    内填文字
                                 </div>
                             </div>
                         </ElCarouselItem>
@@ -83,6 +93,7 @@ import {
 } from 'element-plus'
 import Carouel from '../components/Carouel.vue'
 import { reactive } from 'vue';
+import { ElSkeleton } from 'element-plus';
 let imgList = reactive([
     { id: 1, img: "../demo1.jpg" },
     { id: 2, img: "../demo2.jpg" },
@@ -98,6 +109,22 @@ let imgList = reactive([
 ])
 </script>
 <style scoped>
+.card {
+    display: inline-block;
+    height: 197px;
+    width: 360px;
+    box-shadow: 5px 5px 10px 10px #666
+}
+
+.card_word {
+    position: absolute;
+    display: inline-block;
+    height: 200px;
+    width: 180px;
+    left: 390px;
+    background-color: lightblue;
+}
+
 .el-carousel__item h3 {
     color: #475669;
     opacity: 0.75;
