@@ -56,7 +56,9 @@
                 </template>
                 <el-menu-item-group>
                     <template #title><span>Group One</span></template>
-                    <el-menu-item index="/Comment">item one</el-menu-item>
+                    <el-menu-item index="/Comment">
+                        item one
+                    </el-menu-item>
                     <el-menu-item index="/Comment">item two</el-menu-item>
                 </el-menu-item-group>
                 <el-menu-item-group title="Group Two">
@@ -106,7 +108,8 @@ import {
     ElIcon,
     ElMenuItemGroup,
     ElMenuItem,
-    ElScrollbar
+    ElScrollbar,
+    ElBadge
 } from 'element-plus';
 import router from '../router';
 import { RouterLink } from 'vue-router';

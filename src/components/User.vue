@@ -4,7 +4,9 @@
             <slot name="userAvatar">
                 <div class="flex items-center">
                     <el-icon size="25px" style="top:5px">
-                        <User />
+                        <el-badge :value="12" class="item">
+                            <User />
+                        </el-badge>
                     </el-icon>
                 </div>
             </slot>
@@ -29,7 +31,8 @@ import { te, th } from 'date-fns/locale'
 import router from '../router'
 import axios from 'axios'
 import {
-    ElIcon
+    ElIcon,
+    ElBadge
 } from 'element-plus'
 import {
     User

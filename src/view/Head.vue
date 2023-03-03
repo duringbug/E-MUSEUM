@@ -18,7 +18,11 @@
                 </slot>
             </div>
             <div class="flex items-center">
-                <component class="user" v-if="!props.ifLogin" :is="User" :getOnline="getOnline" />
+                <component class="user" v-if="!props.ifLogin" :is="User" :getOnline="getOnline">
+                    <template #userAvatar>
+
+                    </template>
+                </component>
                 <component class="search" v-if="!props.ifLogin" :is="Search" :getOnline="getOnline" />
             </div>
         </template>

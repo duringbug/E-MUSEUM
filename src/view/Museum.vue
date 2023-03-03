@@ -1,10 +1,13 @@
 <template>
-    <h2>E-MUSEUM</h2>
-
+    <div class="upload">
+        <Uploaod></Uploaod>
+    </div>
 </template>
 <script lang="ts" setup>
-
+import Uploaod from '../components/uploaod.vue';
 </script>
 <style>
-
+.upload {
+    display: inline-block;
+}
 </style>
